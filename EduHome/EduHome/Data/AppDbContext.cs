@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EduHome.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,5 +14,10 @@ namespace EduHome.Data
 
         }
 
+        public DbSet<HomeSlider> Slider { get; set; }
+        public DbSet<Service> Service { get; set; }
+
     }
+
+     
 }
