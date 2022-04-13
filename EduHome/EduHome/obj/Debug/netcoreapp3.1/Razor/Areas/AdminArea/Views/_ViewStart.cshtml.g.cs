@@ -27,14 +27,14 @@ using EduHome.Models;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\HP\Desktop\Back-end Project\EduHome\EduHome\Areas\AdminArea\Views\_ViewImports.cshtml"
-using EduHome.ViewModels;
+#line 4 "C:\Users\HP\Desktop\Back-end Project\EduHome\EduHome\Areas\AdminArea\Views\_ViewImports.cshtml"
+using EduHome.Areas.AdminArea.ViewModels;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2d47ab5c93609c2e85a602b37aa9393d9e3d1829", @"/Areas/AdminArea/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e7af49b5d3cda8b8f85d8f3f819ee9cc7290556d", @"/Areas/AdminArea/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a659d4d1f97800bd12e7819c3ac787bfe4fd0a5b", @"/Areas/AdminArea/Views/_ViewImports.cshtml")]
     public class Areas_AdminArea_Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
