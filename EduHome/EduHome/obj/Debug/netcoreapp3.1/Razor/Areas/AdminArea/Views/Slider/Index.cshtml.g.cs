@@ -27,6 +27,13 @@ using EduHome.Models;
 #line hidden
 #nullable disable
 #nullable restore
+#line 3 "C:\Users\HP\Desktop\Back-end Project\EduHome\EduHome\Areas\AdminArea\Views\_ViewImports.cshtml"
+using EduHome.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 4 "C:\Users\HP\Desktop\Back-end Project\EduHome\EduHome\Areas\AdminArea\Views\_ViewImports.cshtml"
 using EduHome.Areas.AdminArea.ViewModels;
 
@@ -34,7 +41,7 @@ using EduHome.Areas.AdminArea.ViewModels;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"bacc6c199495ac3d6603a51d05098f4615170f34", @"/Areas/AdminArea/Views/Slider/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a659d4d1f97800bd12e7819c3ac787bfe4fd0a5b", @"/Areas/AdminArea/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1ac08bf4c90948c35c1028eb9138beeb43d7cb20", @"/Areas/AdminArea/Views/_ViewImports.cshtml")]
     public class Areas_AdminArea_Views_Slider_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<HomeSlider>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-success"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -86,7 +93,7 @@ using EduHome.Areas.AdminArea.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"header d-flex justify-content-between mt-3\">\r\n                <h3>Sliders</h3>\r\n                <div>\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bacc6c199495ac3d6603a51d05098f4615170f347972", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bacc6c199495ac3d6603a51d05098f4615170f348174", async() => {
                 WriteLiteral("Create");
             }
             );
@@ -143,7 +150,7 @@ using EduHome.Areas.AdminArea.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n                                </td>\r\n                                <td>\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bacc6c199495ac3d6603a51d05098f4615170f3410718", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bacc6c199495ac3d6603a51d05098f4615170f3410920", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -168,7 +175,7 @@ AddHtmlAttributeValue("", 1430, homeSlider.Image, 1430, 17, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                                </td>\r\n                                <td>\r\n                                </td>\r\n                                <td>\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bacc6c199495ac3d6603a51d05098f4615170f3412588", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bacc6c199495ac3d6603a51d05098f4615170f3412790", async() => {
                 WriteLiteral("\r\n                                        <i class=\"mdi mdi-account-box-outline\"></i>\r\n                                    ");
             }
             );
@@ -200,7 +207,7 @@ AddHtmlAttributeValue("", 1430, homeSlider.Image, 1430, 17, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bacc6c199495ac3d6603a51d05098f4615170f3415054", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bacc6c199495ac3d6603a51d05098f4615170f3415256", async() => {
                 WriteLiteral("\r\n                                        <i class=\"mdi mdi-table-edit\"></i>\r\n                                    ");
             }
             );
@@ -232,7 +239,7 @@ AddHtmlAttributeValue("", 1430, homeSlider.Image, 1430, 17, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bacc6c199495ac3d6603a51d05098f4615170f3417509", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bacc6c199495ac3d6603a51d05098f4615170f3417711", async() => {
                 WriteLiteral(@"
                                         <button class=""btn btn-danger btn-sm"" type=""submit"">
                                             <i class=""mdi mdi-delete-forever""></i>

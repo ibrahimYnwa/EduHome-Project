@@ -27,6 +27,13 @@ using EduHome.Models;
 #line hidden
 #nullable disable
 #nullable restore
+#line 3 "C:\Users\HP\Desktop\Back-end Project\EduHome\EduHome\Areas\AdminArea\Views\_ViewImports.cshtml"
+using EduHome.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 4 "C:\Users\HP\Desktop\Back-end Project\EduHome\EduHome\Areas\AdminArea\Views\_ViewImports.cshtml"
 using EduHome.Areas.AdminArea.ViewModels;
 
@@ -34,7 +41,7 @@ using EduHome.Areas.AdminArea.ViewModels;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"bc53c1eaac452864431b5df0f99b5fd9948e94f3", @"/Areas/AdminArea/Views/Dashboard/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a659d4d1f97800bd12e7819c3ac787bfe4fd0a5b", @"/Areas/AdminArea/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1ac08bf4c90948c35c1028eb9138beeb43d7cb20", @"/Areas/AdminArea/Views/_ViewImports.cshtml")]
     public class Areas_AdminArea_Views_Dashboard_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
