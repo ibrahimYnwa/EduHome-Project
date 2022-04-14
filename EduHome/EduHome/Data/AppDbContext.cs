@@ -18,9 +18,9 @@ namespace EduHome.Data
         public DbSet<Service> Service { get; set; }
         public DbSet<NoticeBoard> NoticeBoard { get; set; }
         public DbSet<Testimonial> Testimonial { get; set; }
+        public DbSet<Subscriber> Subscribers { get; set; }
 
-
-    }
+     }
 
      
 }
