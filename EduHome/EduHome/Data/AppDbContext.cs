@@ -24,6 +24,21 @@ namespace EduHome.Data
         public DbSet<TeacherImage> TeacherImage { get; set; }
         public DbSet<TeacherInfo> TeacherInfo { get; set; }
         public DbSet<TeacherSkill> TeacherSkills { get; set; }
+        public DbSet<Contact> Contact { get; set; }
+        public DbSet<Message> Messages { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
+        public DbSet<Cource> Cources { get; set; }
+        public DbSet<CourceImage> CourseImage { get; set; }
+        public DbSet<CourceCategory> CourseCategories { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Event> Events { get; set; }
+        //burdan addi
+        public DbSet <Speaker> Speakers { get; set; }
+        public DbSet<SpeakerImage> SpeakerImage { get; set; }
+        public DbSet<EventCategory> EventCategories { get; set; }
+        public DbSet<SpeakerEvent> SpeakerEvents { get; set; }
+        public DbSet<EventImage> EventImage { get; set; }
+
 
 
     }

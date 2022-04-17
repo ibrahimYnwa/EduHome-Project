@@ -1,0 +1,67 @@
+﻿@model List<Teacher>
+
+<div class="container">
+    <div class="row">
+        <div class="header d-flex justify-content-between mt-3">
+            <h3>Teachers</h3>
+            <div>
+                <a class="btn btn-success" asp-action="Create">Create</a>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            Number
+                        </th>
+                        <th>
+                            Image
+                        </th>
+                        <th>
+                            Tittle
+                        </th>
+                        <th>
+                            Text
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var teacher in Model)
+                    {
+                    <tr>
+                        <td>
+                            @teacher.Id
+                        </td>
+                        <td>
+                            @teacher.FullName
+                        </td>
+                        <td>
+                            @*<img src="~/img/teacher/@teacher.Photo"  alt="Slider" />*@
+                        </td>
+
+                        <td>
+                            <a class="btn btn-primary btn-sm" asp-action="Detail" asp-route-id="@teacher.Id">
+                                <i class="mdi mdi-account-box-outline"></i>
+                            </a>
+                            <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@teacher.Id">
+                                <i class="mdi mdi-table-edit"></i>
+                            </a>
+                            <form style="display:inline-block" method="post" asp-action="Delete" asp-route-id="@teacher.Id">
+                                <button class="btn btn-danger btn-sm" type="submit">
+                                    <i class="mdi mdi-delete-forever"></i>
+                                </button>
+                            </form>
+
+                        </td>
+                    </tr>
+                       
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

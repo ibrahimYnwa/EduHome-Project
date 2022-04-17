@@ -10,5 +10,7 @@ namespace EduHome.ViewModels
     {
         public List<HomeSlider> Sliders { get; set; }
         public List<Service> Services { get; set; }
+        //public List<Course> Courses { get; set; }
+        public List<Event> Events { get; set; }
     }
 }

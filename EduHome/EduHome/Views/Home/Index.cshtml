@@ -52,7 +52,7 @@
 <!-- Service End -->
 <!-- About Start -->
 
- @await Component.InvokeAsync("Welcome")  
+@await Component.InvokeAsync("Welcome")
 
 <!-- About End -->
 <!-- Courses Area Start -->
@@ -123,7 +123,7 @@
 </div>
 <!-- Courses Area End -->
 <!-- Notice Start -->
- @await Component.InvokeAsync("NoticeBoard")
+@await Component.InvokeAsync("NoticeBoard")
 
 <!-- Notice End -->
 <!-- Event Area Start -->
@@ -138,80 +138,32 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="single-event mb-35">
-                    <div class="event-img">
-                        <a href="event-details.html"><img src="~/img/event/event1.jpg" alt="event"></a>
+            @foreach (var _event in Model.Events)
+            {
+                <div class="single-event hidden-xs col-md-6 col-sm-12 col-xs-12">
+                    <div style="width:214px; height:197px; object-fit:contain; overflow:hidden" class="event-img">
+                        <a asp-controller="Event" asp-action="EventDetail" asp-route-id="@_event.Id"><img style="height:100%" src="~/img/event/@_event.EventImage.Photo" alt="event"></a>
                     </div>
                     <div class="event-content text-left">
-                        <h3>20 June 2017</h3>
-                        <h4><a href="event-details.html">ADVANCE PHP WORKSHOP</a></h4>
+                        <h3>@_event.StartTime?.ToString("dd MMMM yyyy")</h3>
+                        <h4><a asp-controller="Event" asp-action="EventDetail" asp-route-id="@_event.Id">@_event.Name</a></h4>
                         <ul>
-                            <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                            <li><i class="fa fa-map-marker"></i>New Yourk City</li>
+                            <li><i class="fa fa-clock-o"></i>@_event.StartTime?.ToString("h:mm tt") - @_event.EndTime?.ToString("h:mm tt")</li>
+                            <li><i class="fa fa-map-marker"></i>@_event.Venue</li>
                         </ul>
                         <div class="event-content-right">
-                            <a class="default-btn" href="event-details.html">join now</a>
+                            <a class="default-btn" asp-controller="Event" asp-action="EventDetail" asp-route-id="@_event.Id">join now</a>
                         </div>
                     </div>
                 </div>
-                <div class="single-event hidden-sm hidden-xs">
-                    <div class="event-img">
-                        <a href="event-details.html"><img src="~/img/event/event3.jpg" alt="event"></a>
-                    </div>
-                    <div class="event-content text-left">
-                        <h3>16 June 2017</h3>
-                        <h4><a href="event-details.html">learning english history</a></h4>
-                        <ul>
-                            <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                            <li><i class="fa fa-map-marker"></i>New Yourk City</li>
-                        </ul>
-                        <div class="event-content-right">
-                            <a class="default-btn" href="event-details.html">join now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="single-event mb-35">
-                    <div class="event-img">
-                        <a href="event-details.html"><img src="~/img/event/event2.jpg" alt="event"></a>
-                    </div>
-                    <div class="event-content text-left">
-                        <h3>18 June 2017</h3>
-                        <h4><a href="event-details.html">DIGITAL MARKETING ANALYSIS</a></h4>
-                        <ul>
-                            <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                            <li><i class="fa fa-map-marker"></i>New Yourk City</li>
-                        </ul>
-                        <div class="event-content-right">
-                            <a class="default-btn" href="event-details.html">join now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-event hidden-sm hidden-xs">
-                    <div class="event-img">
-                        <a href="event-details.html"><img src="~/img/event/event3.jpg" alt="event"></a>
-                    </div>
-                    <div class="event-content text-left">
-                        <h3>14 June 2017</h3>
-                        <h4><a href="event-details.html">UI & UX DESIGNER MEETUP</a></h4>
-                        <ul>
-                            <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                            <li><i class="fa fa-map-marker"></i>New Yourk City</li>
-                        </ul>
-                        <div class="event-content-right">
-                            <a class="default-btn" href="event-details.html">join now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            }
+
         </div>
     </div>
 </div>
 <!-- Event Area End -->
 <!-- Testimonial Area Start -->
- @await Component.InvokeAsync("Testimonial");
+@await Component.InvokeAsync("Testimonial");
 <!-- Testimonial Area End -->
 <!-- Blog Area Start -->
 <div class="blog-area pt-150 pb-150">
@@ -225,67 +177,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-blog">
-                    <div class="blog-img">
-                        <a href="blog-details.html"><img src="~/img/blog/blog1.jpg" alt="blog"></a>
-                        <div class="blog-hover">
-                            <a href="blog-details.html"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-top">
-                            <p>By Alex  /  June 20, 2017  /  <i class="fa fa-comments-o"></i> 4</p>
-                        </div>
-                        <div class="blog-bottom">
-                            <h2><a href="blog-details.html">I must explain to you how all this a mistaken idea </a></h2>
-                            <a href="blog-details.html">read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-blog">
-                    <div class="blog-img">
-                        <a href="blog-details.html"><img src="~/img/blog/blog2.jpg" alt="blog"></a>
-                        <div class="blog-hover">
-                            <a href="blog-details.html"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-top">
-                            <p>By Alex  /  June 20, 2017  /  <i class="fa fa-comments-o"></i> 4</p>
-                        </div>
-                        <div class="blog-bottom">
-                            <h2><a href="blog-details.html">I must explain to you how all this a mistaken idea </a></h2>
-                            <a href="blog-details.html">read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 hidden-sm col-xs-12">
-                <div class="single-blog">
-                    <div class="blog-img">
-                        <a href="blog-details.html"><img src="~/img/blog/blog3.jpg" alt="blog"></a>
-                        <div class="blog-hover">
-                            <a href="blog-details.html"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-top">
-                            <p>By Alex  /  June 20, 2017  /  <i class="fa fa-comments-o"></i> 4</p>
-                        </div>
-                        <div class="blog-bottom">
-                            <h2><a href="blog-details.html">I must explain to you how all this a mistaken idea </a></h2>
-                            <a href="blog-details.html">read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+          @await Component.InvokeAsync("Blog", 3) 
+         </div>
     </div>
 </div>
 <!-- Blog Area End -->
 <!-- Subscribe Start -->
-@await Component.InvokeAsync("Newsteller") 
+@await Component.InvokeAsync("Newsteller")
 <!-- Subscribe End -->

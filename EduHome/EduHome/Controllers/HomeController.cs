@@ -22,11 +22,18 @@ namespace EduHome.Controllers
         {
             List<HomeSlider> homeSliders = await _context.Slider.ToListAsync();
             List<Service> services = await _context.Service.ToListAsync();
+            var Events = await _context.Events.Where(e => e.IsDeleted == false)
+               .Include(e => e.EventImage)
+               .OrderByDescending(e => e.Id)
+               .Take(4)
+               .ToListAsync();
+
 
             HomeVM homeVM = new HomeVM
             {
                 Sliders = homeSliders,
-                Services=services
+                Services=services,
+                Events = Events
 
             };
             return View(homeVM);
