@@ -181,3 +181,4 @@ C:\Users\HP\Desktop\Back-end Project\EduHome\EduHome\bin\Debug\netcoreapp3.1\X.P
 C:\Users\HP\Desktop\Back-end Project\EduHome\EduHome\obj\Debug\netcoreapp3.1\EduHome.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\HP\Desktop\Back-end Project\EduHome\EduHome\obj\Debug\netcoreapp3.1\Razor\Views\Event\Index.cshtml.g.cs
 C:\Users\HP\Desktop\Back-end Project\EduHome\EduHome\obj\Debug\netcoreapp3.1\Razor\Views\Event\EventDetail.cshtml.g.cs
+C:\Users\HP\Desktop\Back-end Project\EduHome\EduHome\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Footer\Default.cshtml.g.cs

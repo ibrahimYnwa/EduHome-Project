@@ -38,6 +38,7 @@ namespace EduHome.Data
         public DbSet<EventCategory> EventCategories { get; set; }
         public DbSet<SpeakerEvent> SpeakerEvents { get; set; }
         public DbSet<EventImage> EventImage { get; set; }
+        
 
 
 
