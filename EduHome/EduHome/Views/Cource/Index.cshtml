@@ -1,5 +1,6 @@
 ﻿
-@using PagedList;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList;
 @model CourceVM
 
 <div class="banner-area-wrapper">
@@ -42,7 +43,7 @@
                         <div class="single-course mb-70">
                             <div class="course-img">
                                 <a asp-controller="Course" asp-action="CourseDetail" asp-route-id="@course.Id">
-                                    <img src="~/img/@course.CourseImage.Photo" alt="course">
+                                    <img src="~/img/course/@course.CourseImage.Photo" alt="course">
                                     <div class="course-hover">
                                         <i class="fa fa-link"></i>
                                     </div>
@@ -58,9 +59,9 @@
                 }
             </div>
             <div class="row">
-                @*<div class="col-xs-12">
-                    @Html.Paged(Model.Courses, number => Url.Action("Index", "Course", new { number }))
-                </div>*@
+                <div class="col-xs-12">
+                    @Html.PagedListPager(Model.Courses, number => Url.Action("Index", "Course", new { number }))
+                </div>
             </div>
         </div>
     </div>

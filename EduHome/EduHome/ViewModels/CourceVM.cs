@@ -1,5 +1,5 @@
 ﻿using EduHome.Models;
-using PagedList;
+using X.PagedList;
 using System;
 using System.Collections.Generic;
 using System.Linq;

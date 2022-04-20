@@ -179,8 +179,6 @@ namespace EduHome.Areas.AdminArea.Controllers
                 }
    
 
-              //  FileHelper.DeleteFile(existingImage.Photo, _env.WebRootPath, "img");
-                //FileHelper.CreateFile(teacherVM.Photo.FileName, _env.WebRootPath, "img", teacherVM.Photo);
             }
 
             var existingTeacherSkils = await _context.TeacherSkills.Select(x => x).Where(c => c.TeacherId == teacher.Id).ToListAsync();
